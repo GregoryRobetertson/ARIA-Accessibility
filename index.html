@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 Day 2</title>
+  </head>
+  <body>
+    <!-- used to define the roles of different sections on the page -->
+    <header role="heading">
+      <h1>Accessible Website</h1>
+      <h2>The Purpose Of ARIA And Web Accessibility</h2>
+      <p>
+        It defines a way to make web content and web applications more
+        accessible to people with disabilities and helps with dynamic content
+        and advanced user interface controls developed with HTML, JavaScript,
+        and related technologies.
+      </p>
+    </header>
+    <!-- ARIA aria-hidden="true": Hides an element from assistive technologies. -->
+    <div aria-hidden="true">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In aspernatur
+        deleniti id dolorum modi dolores, veniam ipsam numquam provident rerum
+        soluta, aliquid perferendis quibusdam repellendus beatae, at voluptas.
+        Sunt, delectus.
+      </p>
+    </div>
+    <!-- used to define the roles of different sections on the page -->
+    <nav role="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- ARIA aria-label: Provides a label for an element. -->
+    <input
+      type="text"
+      aria-label="Enter your email address"
+      placeholder="Email Address"
+    />
+    <section>
+      <!-- The h2 element is associated with the div using the same ID. -->
+      <h2 aria-labelledby="section-title">Section Title</h2>
+      <!-- ARIA aria-labelledby: Associates the element with the element that contains its label. -->
+      <div id="section-title">
+        <p>Content of the section.</p>
+      </div>
+    </section>
+  </body>
+</html>
